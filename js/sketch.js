@@ -4,18 +4,18 @@
 // 🤟(ILoveYou)
 function getCode(left_gesture, right_gesture) {
   let code_array = {
-    "Thumb_Up": 1,
-    "Thumb_Down": 2,
-    "Victory": 3,
-    "Pointing_Up": 4,
-    "Closed_Fist": 5,
-    "Open_Palm": 6,
-  }
+    "thumbs_up": 1,
+    "peace": 2,
+    "point": 3,
+    "fist": 4,
+    "open": 5,
+    "ok": 6,
+  };
+
   let left_code = code_array[left_gesture];
   let right_code = code_array[right_gesture];
-  // left_codeとright_codeを文字として結合
-  let code = String(left_code) + String(right_code);
-  return code;
+
+  return String(left_code) + String(right_code);
 }
 
 function getCharacter(code) {
